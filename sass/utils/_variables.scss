@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --background-color: #ffffff;
+  --primary-bg-color: #2196f3;
+  --main-font: Roboto;
+  --secondary-font: Raleway;
+  --default-font: sans-serif;
+}

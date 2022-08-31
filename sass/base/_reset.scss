@@ -1,0 +1,11 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
