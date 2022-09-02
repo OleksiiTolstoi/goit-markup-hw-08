@@ -1,20 +1,31 @@
 .clients {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.companies {
-  display: flex;
-  justify-content: center;
-
-  list-style: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desctop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients__companies {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .companies__item {
-  width: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+  @include desctop {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .companies__link {
   display: flex;

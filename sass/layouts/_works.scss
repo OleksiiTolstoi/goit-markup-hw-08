@@ -1,6 +1,12 @@
 .works {
+  display: none;
   padding-bottom: 94px;
+  @include desctop {
+    display: flex;
+    padding-bottom: 94px;
+  }
 }
+
 .works__list {
   display: flex;
 }
