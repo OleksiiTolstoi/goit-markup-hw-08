@@ -3,10 +3,27 @@
   background-color: #2f303a;
 }
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
+  display: block; /*новое*/
+  width: 100%; /*новое*/
+}
+.footer_logo {
+  display: flex; /*новое*/
+  justify-content: center; /*новое*/
+  align-items: center; /*новое*/
+}
+.footer__base {
+  display: block; /*новое*/
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 .adress {
+  display: flex; /*новое*/
+  width: 100%; /*новое*/
+  justify-content: center;
+  align-items: center;
   font-style: normal;
 }
 .footer__contacts {
@@ -38,6 +55,9 @@
   }
 }
 .footer__item {
+  display: flex; /*новое*/
+  align-items: center; /*новое*/
+  justify-content: center; /*новое*/
   &:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -49,9 +69,18 @@
   height: 80px;
 }
 .footer__socials {
-  margin-left: 70px;
+  // margin-left: 70px;
+  margin: 0;
+  display: block; /*новое*/
+  width: auto;
+  justify-content: center;
+  align-items: center;
 }
 .socials__title {
+  display: flex; /*новое*/
+  justify-content: center; /*новое*/
+  align-items: center; /*новое*/
+  width: 100%;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -65,13 +94,15 @@
 
 /*Connect*/
 .connect {
+  display: block;
   width: 570px;
 }
 .footer__connect {
-  margin-left: 93px;
+  // margin-left: 93px;
 }
 .connect__form {
-  display: flex;
+  // display: flex;
+  display: block;
 }
 
 .connect__icon {
