@@ -607,6 +607,20 @@ body {
   width: 100%; /*новое*/
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer__container {
+    align-items: baseline;
+    flex-wrap: nowrap;
+  }
+}
 
 .footer_logo {
   display: flex; /*новое*/
@@ -628,7 +642,6 @@ body {
   align-items: center;
   margin: 0;
 }
-
 .adress {
   display: flex; /*новое*/
   width: 100%; /*новое*/
@@ -683,6 +696,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .footer__socials {
+    width: calc(50% - 165px);
+    margin: 0;
+  }
+}
 
 .socials__title {
   display: flex; /*новое*/
@@ -708,6 +727,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .footer__connect {
+    margin-top: 60px;
+    width: calc(100% - 318px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__connect {
+    display: block;
+    margin-top: 0;
+  }
+}
 
 .connect__form {
   width: 100%;
@@ -715,6 +746,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .connect__form {
+    display: block;
+  }
 }
 
 .connect__icon {
@@ -784,6 +820,11 @@ body {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1200px) {
+  .connect__input {
+    width: 358px;
+  }
 }
 
 .connect__btn {
