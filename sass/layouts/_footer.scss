@@ -31,12 +31,15 @@
   }
 }
 .footer__base {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 60px;
-  justify-content: center;
-  align-items: center;
+
   margin: 0;
+  @include tablet {
+  }
   @include desctop {
-    width: 25%;
+    width: 50% - 276px;
   }
 }
 .adress {
