@@ -642,16 +642,18 @@ body {
   align-items: center;
   margin: 0;
 }
+@media screen and (min-width: 1200px) {
+  .footer__base {
+    width: 25%;
+  }
+}
+
 .adress {
   display: flex; /*новое*/
   width: 100%; /*новое*/
   justify-content: center;
   align-items: center;
   font-style: normal;
-}
-
-.footer__contacts {
-  display: block;
 }
 
 .footer__adress {
@@ -735,7 +737,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer__connect {
-    display: block;
+    width: 50%;
     margin-top: 0;
   }
 }
@@ -749,7 +751,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .connect__form {
-    display: block;
+    flex-direction: row;
+    width: 100%;
   }
 }
 
@@ -771,7 +774,6 @@ body {
   text-transform: uppercase;
   color: var(--background-color);
 }
-
 .connect__input {
   width: 100%;
   margin-bottom: 20px;
@@ -824,6 +826,8 @@ body {
 @media screen and (min-width: 1200px) {
   .connect__input {
     width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 
