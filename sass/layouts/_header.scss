@@ -15,6 +15,7 @@
 .navigation {
   display: flex;
   align-items: center;
+  display: none;
 }
 
 .navigation__list {
@@ -64,6 +65,7 @@
 .contacts {
   display: flex;
   margin-left: auto;
+  display: none;
 }
 
 .contacts__icons {

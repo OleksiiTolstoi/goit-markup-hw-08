@@ -36,10 +36,9 @@
   margin-bottom: 60px;
 
   margin: 0;
-  @include tablet {
-  }
   @include desctop {
-    width: 50% - 276px;
+    flex-grow: 1;
+    width: 232px;
   }
 }
 .adress {
@@ -48,6 +47,10 @@
   justify-content: center;
   align-items: center;
   font-style: normal;
+  @include desctop {
+    width: 232px;
+    margin-right: 70px;
+  }
 }
 
 .footer__adress {
@@ -101,6 +104,9 @@
     width: calc(50% - 165px);
     margin: 0;
   }
+  @include desctop {
+    width: 206px;
+  }
 }
 .socials__title {
   display: flex; /*новое*/
@@ -131,7 +137,7 @@
     width: calc(100% - 318px);
   }
   @include desctop {
-    width: 50%;
+    width: calc(50% - 30px);
     margin-top: 0;
   }
 }
