@@ -305,6 +305,13 @@ body {
   margin-left: 50px;
 }
 
+.mobile__btn {
+  margin-left: auto;
+  fill: currentColor;
+  background-color: var(--background-color);
+  border: none;
+}
+
 .hero {
   width: 100%;
   display: flex;
