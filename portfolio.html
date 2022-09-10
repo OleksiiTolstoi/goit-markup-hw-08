@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a class="logo header__logo link" href="/">
           Web<span class="logo__accent--color-black">Studio</span>
@@ -29,10 +29,10 @@
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a class="navigation__link link" href="./index.html">Студия</a>
+              <a class="navigation__link link current" href="">Студия</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link link current" href="./portfolio.html"
+              <a class="navigation__link link" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
@@ -59,8 +59,94 @@
             >
           </li>
         </ul>
+        <button type="button" class="mobile__btn" data-menu-open>
+          <svg class="mobile__icons" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mobile__menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mobile__menu__top">
+            <button type="button" class="mobile__close-btn" data-menu-close>
+              <svg class="mobile__icons" width="22" height="22">
+                <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+              </svg>
+            </button>
+            <nav class="mobile__menu__navigation">
+              <ul class="mobile__menu__list list">
+                <li class="mobile__menu__item">
+                  <a class="mobile__menu__link link current" href="">Студия</a>
+                </li>
+                <li class="mobile__menu__item">
+                  <a
+                    class="mobile__menu__link link current"
+                    href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mobile__menu__item">
+                  <a class="mobile__menu__link link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <ul class="mobile__menu__contacts list">
+            <li class="mobile__menu__item">
+              <a class="mobile__menu__tel_link link" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile__menu__item">
+              <a
+                class="mobile__menu__mail_link link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="modile__soc-list list">
+            <li class="modile__soc-item">
+              <a
+                class="modile__soc-link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Instagram</a
+              >
+            </li>
+            <li class="modile__soc-item">
+              <a
+                class="modile__soc-link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Twitter</a
+              >
+            </li>
+            <li class="modile__soc-item">
+              <a
+                class="modile__soc-link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Facebook</a
+              >
+            </li>
+            <li class="modile__soc-item">
+              <a
+                class="modile__soc-link link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="section-portfolio">
         <div class="container">
@@ -354,5 +440,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
