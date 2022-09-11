@@ -21,8 +21,10 @@
   transform: translate(-50%, -60%) scale(1);
   transition: transform 500ms;
   @include tablet {
+    top: 50%;
+    left: 50%;
     width: calc(100% - 159px);
-    transform: translate(-50%, -60%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
   @include desctop {
     width: 100%;
