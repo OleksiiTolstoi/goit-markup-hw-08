@@ -134,16 +134,25 @@
   @include tablet {
     font-size: 12px;
     line-height: 1.17;
-    margin-left: 0;
   }
   @include desctop {
     font-size: 14px;
     line-height: 1.14;
   }
 }
-@include desctop {
-  .contacts__item + .contacts__item {
-    margin-left: 30px;
+.contacts__item {
+  @include tablet {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @include desctop {
+    & + & {
+      margin-left: 30px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 

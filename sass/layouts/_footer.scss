@@ -3,10 +3,7 @@
   background-color: #2f303a;
 }
 .footer__container {
-  // display: flex;
-  // align-items: baseline;
-  display: flex; /*новое*/
-  width: 100%; /*новое*/
+  display: flex;
   flex-direction: column;
   @include tablet {
     flex-direction: row;
@@ -14,15 +11,16 @@
     align-items: baseline;
     justify-content: space-around;
     @include desctop {
+      justify-content: space-between;
       align-items: baseline;
       flex-wrap: nowrap;
     }
   }
 }
 .footer_logo {
-  display: flex; /*новое*/
-  justify-content: center; /*новое*/
-  align-items: center; /*новое*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 24px;
   line-height: 1.17;
   @include desctop {
@@ -34,22 +32,20 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
-
   margin: 0;
   @include desctop {
+    align-items: flex-start;
     flex-grow: 1;
-    width: 232px;
   }
 }
 .adress {
-  display: flex; /*новое*/
-  width: 100%; /*новое*/
+  display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   font-style: normal;
   @include desctop {
-    width: 232px;
-    margin-right: 70px;
+    display: block;
   }
 }
 
@@ -62,6 +58,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  @include desctop {
+    margin-bottom: 9px;
+  }
 }
 
 .footer__text {
@@ -85,18 +84,19 @@
   &:not(:last-child) {
     margin-bottom: 8px;
   }
+  @include desctop {
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 /*Socials*/
-// .socials {
-//   width: 206px;
-//   height: 80px;
-// }
+
 .footer__socials {
-  // margin-left: 70px;
   margin-bottom: 60px;
   margin-top: 60px;
-  display: block; /*новое*/
   width: auto;
   justify-content: center;
   align-items: center;
@@ -105,13 +105,14 @@
     margin: 0;
   }
   @include desctop {
+    margin-right: 93px;
     width: 206px;
   }
 }
 .socials__title {
-  display: flex; /*новое*/
-  justify-content: center; /*новое*/
-  align-items: center; /*новое*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   font-weight: 700;
   font-size: 14px;
@@ -122,6 +123,9 @@
   margin-top: 0;
   margin-bottom: 0;
   color: var(--background-color);
+  @include desctop {
+    display: block;
+  }
 }
 
 /*Connect*/
@@ -131,12 +135,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // margin-left: 93px;
   @include tablet {
     margin-top: 60px;
     width: calc(100% - 318px);
   }
   @include desctop {
+    align-items: flex-start;
     width: calc(50% - 30px);
     margin-top: 0;
   }
@@ -169,14 +173,13 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-color);
-  @include desctop {
-  }
 }
 
 .connect__input {
   width: 100%;
   margin-bottom: 20px;
   padding: 0;
+  max-width: 450px;
   // margin-right: 12px;
   font-style: normal;
   font-weight: 400;
@@ -184,7 +187,7 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  // width: 358px;
+
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
