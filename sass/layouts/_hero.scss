@@ -5,7 +5,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 118px 60px;
+  padding: 118px 0;
   text-align: center;
   flex-grow: 1;
   background-image: var(--bg-gradient), url(../images/hero-bg-mob.jpg);
@@ -15,7 +15,9 @@
   @include retina {
     background-image: var(--bg-gradient), url(../images/hero-bg-mob-2x.jpg);
   }
-
+  @include mobile {
+    padding: 118px 60px;
+  }
   @include tablet {
     padding: 118px 204px;
     background-image: var(--bg-gradient), url(../images/hero-bg-tab.jpg);

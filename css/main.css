@@ -505,7 +505,7 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 118px 60px;
+  padding: 118px 0;
   text-align: center;
   flex-grow: 1;
   background-image: var(--bg-gradient), url(../images/hero-bg-mob.jpg);
@@ -516,6 +516,11 @@ body {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: var(--bg-gradient), url(../images/hero-bg-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    padding: 118px 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1471,7 +1476,6 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  width: 322px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #757575;
 }
